@@ -63,3 +63,38 @@ def get_row_value(cell):
     """Gets the 'at' value from a cell"""
     value = cell[1:]
     return int(value) - 1
+
+
+def get_item_line_number(item_table, item_row):
+    """Gets the item's line number from the table"""
+    return item_table.at[item_row, 'LINE_NUM']
+
+
+def get_item_quantity(item_table, item_row):
+    """Gets the item's quantity from the table"""
+    return item_table.at[item_row, 'QTY']
+
+
+def get_item_unit_of_measure(item_table, item_row):
+    """Gets the item's unit of measure from the table"""
+    return item_table.at[item_row, 'UOM']
+
+
+def get_item_number(item_table, item_row):
+    """Gets the item's identification number from the table"""
+    return item_table.at[item_row, 'ITEM_NUM']
+
+
+def get_item_description(item_table, item_row):
+    """Gets the item's description from the table"""
+    return item_table.at[item_row, 'DESC']
+
+
+def get_item_unit_price(item_table, item_row):
+    """Gets the item's unit price from the table"""
+    return item_table.at[item_row, 'UNIT_PRICE']
+
+
+def get_item_cost(item_table, item_row):
+    """Gets the item's total order cost from the table"""
+    return item_table.at[item_row, 'COST']
