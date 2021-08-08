@@ -30,7 +30,7 @@ CELLS = {
 ITEM_TABLE = pd.DataFrame(
     [
         [1, 7, 'CASE', '123', 'Item 1', 20, 140],
-        [2, 6, 'PALLET', '124', 'Item 2', 18, 108]
+        [2, 6, 'PALLET', 124.0, 'Item 2', 18, 108]
     ],
     columns=[
         'LINE_NUM',

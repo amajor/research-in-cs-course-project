@@ -82,7 +82,9 @@ def get_item_unit_of_measure(item_table, item_row):
 
 def get_item_number(item_table, item_row):
     """Gets the item's identification number from the table"""
-    return item_table.at[item_row, 'ITEM_NUM']
+    value = item_table.at[item_row, 'ITEM_NUM']
+    value_as_int = int(value)
+    return str(value_as_int)
 
 
 def get_item_description(item_table, item_row):
