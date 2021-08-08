@@ -1,7 +1,5 @@
 import pandas as pd
 
-from spreadsheets.methods import get_cell_value, get_po_number, get_ship_date
-
 FILE_PATH = '../documents/ORDERS.xlsx'
 SHEET_NAME = 'Order Sample 1'
 
