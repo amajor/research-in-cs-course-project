@@ -10,6 +10,24 @@ WORKBOOK = pd.read_excel(
     header=None
 )
 
+ITEM_TABLE = pd.read_excel(
+    FILE_PATH,
+    sheet_name=SHEET_NAME,
+    usecols="A:F",
+    skiprows=3,
+    nrows=4
+)
+# Mapping column names for item table
+ITEM_TABLE.columns = [
+    # 'LINE_NUM',    # Line #
+    'DESC',        # DESC
+    'UNIT_PRICE',  # PRICE
+    'QTY',         # QTY
+    'UOM',         # U/M
+    'ITEM_NUM',    # ITEM_NUM
+    'COST'         # COST
+]
+
 # Mapping of the values to cells
 ORDER_TWO_CELLS = {
     "poNum": "A2",
@@ -19,10 +37,3 @@ ORDER_TWO_CELLS = {
     "totalQty": "C10",
     "totalCost": "F10"
 }
-
-# - Table of Items
-#   - Quantity
-#   - Unit of Measure
-#   - Item Number
-#   - Unit Price
-#   - Unit Cost

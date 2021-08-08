@@ -17,6 +17,7 @@ ITEM_TABLE = pd.read_excel(
     skiprows=5,
     nrows=4
 )
+# Mapping column names for item table
 ITEM_TABLE.columns = [
     'LINE_NUM',    # Line #
     'QTY',         # Quantity
@@ -36,4 +37,3 @@ ORDER_ONE_CELLS = {
     "totalQty": "B12",
     "totalCost": "G12"
 }
-
