@@ -1,0 +1,1519 @@
+{
+  "ParsedResults": [
+    {
+      "Overlay": {
+        "Lines": [
+          {
+            "LineText": "INVOICE TO: xyz Company",
+            "Words": [
+              {
+                "WordText": "INVOICE",
+                "Left": 74.5,
+                "Top": 105,
+                "Height": 13,
+                "Width": 64.5
+              },
+              {
+                "WordText": "TO:",
+                "Left": 149.5,
+                "Top": 105.5,
+                "Height": 12.5,
+                "Width": 25.5
+              },
+              {
+                "WordText": "xyz",
+                "Left": 182,
+                "Top": 105.5,
+                "Height": 13.5,
+                "Width": 27
+              },
+              {
+                "WordText": "Company",
+                "Left": 219.5,
+                "Top": 105.5,
+                "Height": 17,
+                "Width": 66
+              }
+            ],
+            "MaxHeight": 17,
+            "MinTop": 105
+          },
+          {
+            "LineText": "123 State Street",
+            "Words": [
+              {
+                "WordText": "123",
+                "Left": 182.5,
+                "Top": 121.5,
+                "Height": 13,
+                "Width": 26.5
+              },
+              {
+                "WordText": "State",
+                "Left": 220,
+                "Top": 122,
+                "Height": 12.5,
+                "Width": 46.5
+              },
+              {
+                "WordText": "Street",
+                "Left": 278,
+                "Top": 120.5,
+                "Height": 15,
+                "Width": 55
+              }
+            ],
+            "MaxHeight": 15,
+            "MinTop": 120.5
+          },
+          {
+            "LineText": "Any town, USA",
+            "Words": [
+              {
+                "WordText": "Any",
+                "Left": 181,
+                "Top": 138,
+                "Height": 16.5,
+                "Width": 27
+              },
+              {
+                "WordText": "town,",
+                "Left": 210.5,
+                "Top": 140,
+                "Height": 13,
+                "Width": 43.5
+              },
+              {
+                "WordText": "USA",
+                "Left": 268,
+                "Top": 139,
+                "Height": 13,
+                "Width": 27
+              }
+            ],
+            "MaxHeight": 16.5,
+            "MinTop": 138
+          },
+          {
+            "LineText": "SHIP TO LOCATION:",
+            "Words": [
+              {
+                "WordText": "SHIP",
+                "Left": 73.5,
+                "Top": 170.5,
+                "Height": 12,
+                "Width": 37
+              },
+              {
+                "WordText": "TO",
+                "Left": 120,
+                "Top": 170.5,
+                "Height": 13,
+                "Width": 19
+              },
+              {
+                "WordText": "LOCATION:",
+                "Left": 150.5,
+                "Top": 171,
+                "Height": 13.5,
+                "Width": 81
+              }
+            ],
+            "MaxHeight": 13.5,
+            "MinTop": 170.5
+          },
+          {
+            "LineText": "PURCHASE ORDER",
+            "Words": [
+              {
+                "WordText": "PURCHASE",
+                "Left": 380.5,
+                "Top": 107.5,
+                "Height": 13,
+                "Width": 73.5
+              },
+              {
+                "WordText": "ORDER",
+                "Left": 466.5,
+                "Top": 108.5,
+                "Height": 13,
+                "Width": 47
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 107.5
+          },
+          {
+            "LineText": "Some fine print here, Lorem ipsum",
+            "Words": [
+              {
+                "WordText": "Some",
+                "Left": 380,
+                "Top": 138,
+                "Height": 10.5,
+                "Width": 30.5
+              },
+              {
+                "WordText": "fine",
+                "Left": 419,
+                "Top": 139,
+                "Height": 10.5,
+                "Width": 23
+              },
+              {
+                "WordText": "print",
+                "Left": 452.5,
+                "Top": 139,
+                "Height": 13,
+                "Width": 36.5
+              },
+              {
+                "WordText": "here,",
+                "Left": 500.5,
+                "Top": 140,
+                "Height": 10.5,
+                "Width": 35.5
+              },
+              {
+                "WordText": "Lorem",
+                "Left": 548.5,
+                "Top": 140,
+                "Height": 10.5,
+                "Width": 38
+              },
+              {
+                "WordText": "ipsum",
+                "Left": 597,
+                "Top": 140.5,
+                "Height": 12.5,
+                "Width": 37.5
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 138
+          },
+          {
+            "LineText": "dolor sit amet. consectetur",
+            "Words": [
+              {
+                "WordText": "dolor",
+                "Left": 379,
+                "Top": 152,
+                "Height": 10.5,
+                "Width": 39.5
+              },
+              {
+                "WordText": "sit",
+                "Left": 428,
+                "Top": 153,
+                "Height": 10.5,
+                "Width": 21.5
+              },
+              {
+                "WordText": "amet.",
+                "Left": 460,
+                "Top": 153.5,
+                "Height": 10.5,
+                "Width": 36
+              },
+              {
+                "WordText": "consectetur",
+                "Left": 507.5,
+                "Top": 154.5,
+                "Height": 9.5,
+                "Width": 86
+              }
+            ],
+            "MaxHeight": 10.5,
+            "MinTop": 152
+          },
+          {
+            "LineText": "adipiscing e I ht. Integer at enim",
+            "Words": [
+              {
+                "WordText": "adipiscing",
+                "Left": 380,
+                "Top": 166,
+                "Height": 13,
+                "Width": 77.5
+              },
+              {
+                "WordText": "e",
+                "Left": 467,
+                "Top": 168.5,
+                "Height": 8,
+                "Width": 6
+              },
+              {
+                "WordText": "I",
+                "Left": 476,
+                "Top": 166,
+                "Height": 10.5,
+                "Width": 5
+              },
+              {
+                "WordText": "ht.",
+                "Left": 483.5,
+                "Top": 167,
+                "Height": 9.5,
+                "Width": 21
+              },
+              {
+                "WordText": "Integer",
+                "Left": 516,
+                "Top": 167,
+                "Height": 13,
+                "Width": 54
+              },
+              {
+                "WordText": "at",
+                "Left": 579.5,
+                "Top": 168.5,
+                "Height": 9,
+                "Width": 13.5
+              },
+              {
+                "WordText": "enim",
+                "Left": 603.5,
+                "Top": 167.5,
+                "Height": 10.5,
+                "Width": 31
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 166
+          },
+          {
+            "LineText": "tempor eros aliquet euismod et in",
+            "Words": [
+              {
+                "WordText": "tempor",
+                "Left": 380,
+                "Top": 179,
+                "Height": 12.5,
+                "Width": 46
+              },
+              {
+                "WordText": "eros",
+                "Left": 435,
+                "Top": 181.5,
+                "Height": 8,
+                "Width": 31.5
+              },
+              {
+                "WordText": "aliquet",
+                "Left": 476,
+                "Top": 179,
+                "Height": 13,
+                "Width": 53
+              },
+              {
+                "WordText": "euismod",
+                "Left": 538.5,
+                "Top": 180,
+                "Height": 10.5,
+                "Width": 54.5
+              },
+              {
+                "WordText": "et",
+                "Left": 602.5,
+                "Top": 181.5,
+                "Height": 10,
+                "Width": 14.5
+              },
+              {
+                "WordText": "in",
+                "Left": 628.5,
+                "Top": 181,
+                "Height": 10.5,
+                "Width": 13
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 179
+          },
+          {
+            "LineText": "Telis. Duis ld euismod magna. Lorem",
+            "Words": [
+              {
+                "WordText": "Telis.",
+                "Left": 380,
+                "Top": 192,
+                "Height": 10.5,
+                "Width": 44.5
+              },
+              {
+                "WordText": "Duis",
+                "Left": 435,
+                "Top": 193,
+                "Height": 10.5,
+                "Width": 31.5
+              },
+              {
+                "WordText": "ld",
+                "Left": 476,
+                "Top": 193,
+                "Height": 10.5,
+                "Width": 13
+              },
+              {
+                "WordText": "euismod",
+                "Left": 499.5,
+                "Top": 194,
+                "Height": 10.5,
+                "Width": 54
+              },
+              {
+                "WordText": "magna.",
+                "Left": 563,
+                "Top": 196.5,
+                "Height": 10.5,
+                "Width": 44.5
+              },
+              {
+                "WordText": "Lorem",
+                "Left": 619,
+                "Top": 194,
+                "Height": 11,
+                "Width": 39
+              }
+            ],
+            "MaxHeight": 11,
+            "MinTop": 192
+          },
+          {
+            "LineText": "ipsum dolor s ft amet, consectetur",
+            "Words": [
+              {
+                "WordText": "ipsum",
+                "Left": 380,
+                "Top": 206,
+                "Height": 12.5,
+                "Width": 38.5
+              },
+              {
+                "WordText": "dolor",
+                "Left": 426,
+                "Top": 206,
+                "Height": 10.5,
+                "Width": 39.5
+              },
+              {
+                "WordText": "s",
+                "Left": 475,
+                "Top": 208.5,
+                "Height": 8,
+                "Width": 6
+              },
+              {
+                "WordText": "ft",
+                "Left": 483.5,
+                "Top": 207,
+                "Height": 9.5,
+                "Width": 13.5
+              },
+              {
+                "WordText": "amet,",
+                "Left": 507.5,
+                "Top": 208,
+                "Height": 10.5,
+                "Width": 36.5
+              },
+              {
+                "WordText": "consectetur",
+                "Left": 554.5,
+                "Top": 208.5,
+                "Height": 9,
+                "Width": 86.5
+              }
+            ],
+            "MaxHeight": 12.5,
+            "MinTop": 206
+          },
+          {
+            "LineText": "ad] piscing elit.",
+            "Words": [
+              {
+                "WordText": "ad]",
+                "Left": 379,
+                "Top": 218.5,
+                "Height": 10.5,
+                "Width": 21
+              },
+              {
+                "WordText": "piscing",
+                "Left": 403.5,
+                "Top": 219,
+                "Height": 13.5,
+                "Width": 54
+              },
+              {
+                "WordText": "elit.",
+                "Left": 466.5,
+                "Top": 219,
+                "Height": 10.5,
+                "Width": 37.5
+              }
+            ],
+            "MaxHeight": 13.5,
+            "MinTop": 218.5
+          },
+          {
+            "LineText": "Nul lam eget SUSCi it orci. sit amet",
+            "Words": [
+              {
+                "WordText": "Nul",
+                "Left": 379,
+                "Top": 245.5,
+                "Height": 10.5,
+                "Width": 21
+              },
+              {
+                "WordText": "lam",
+                "Left": 403.5,
+                "Top": 245.5,
+                "Height": 10.5,
+                "Width": 22.5
+              },
+              {
+                "WordText": "eget",
+                "Left": 434,
+                "Top": 247,
+                "Height": 11.5,
+                "Width": 30.5
+              },
+              {
+                "WordText": "SUSCi",
+                "Left": 475,
+                "Top": 247,
+                "Height": 10.5,
+                "Width": 36.5
+              },
+              {
+                "WordText": "it",
+                "Left": 524,
+                "Top": 247,
+                "Height": 10.5,
+                "Width": 13
+              },
+              {
+                "WordText": "orci.",
+                "Left": 546.5,
+                "Top": 247,
+                "Height": 12.5,
+                "Width": 36.5
+              },
+              {
+                "WordText": "sit",
+                "Left": 595.5,
+                "Top": 248,
+                "Height": 10.5,
+                "Width": 21.5
+              },
+              {
+                "WordText": "amet",
+                "Left": 627,
+                "Top": 249,
+                "Height": 9.5,
+                "Width": 29.5
+              }
+            ],
+            "MaxHeight": 12.5,
+            "MinTop": 245.5
+          },
+          {
+            "LineText": "trdstique justo.",
+            "Words": [
+              {
+                "WordText": "trdstique",
+                "Left": 379,
+                "Top": 259.5,
+                "Height": 12,
+                "Width": 69
+              },
+              {
+                "WordText": "justo.",
+                "Left": 459.5,
+                "Top": 259.5,
+                "Height": 13,
+                "Width": 44.5
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 259.5
+          },
+          {
+            "LineText": "aecenas aliquam",
+            "Words": [
+              {
+                "WordText": "aecenas",
+                "Left": 523,
+                "Top": 262,
+                "Height": 8.5,
+                "Width": 54
+              },
+              {
+                "WordText": "aliquam",
+                "Left": 586.5,
+                "Top": 260,
+                "Height": 13.5,
+                "Width": 55
+              }
+            ],
+            "MaxHeight": 13.5,
+            "MinTop": 260
+          },
+          {
+            "LineText": "consectetur tel lus ac fermentum.",
+            "Words": [
+              {
+                "WordText": "consectetur",
+                "Left": 378,
+                "Top": 273.5,
+                "Height": 9.5,
+                "Width": 87.5
+              },
+              {
+                "WordText": "tel",
+                "Left": 475,
+                "Top": 272.5,
+                "Height": 10.5,
+                "Width": 21
+              },
+              {
+                "WordText": "lus",
+                "Left": 499.5,
+                "Top": 272.5,
+                "Height": 10.5,
+                "Width": 21.5
+              },
+              {
+                "WordText": "ac",
+                "Left": 531,
+                "Top": 276,
+                "Height": 8,
+                "Width": 13
+              },
+              {
+                "WordText": "fermentum.",
+                "Left": 555.5,
+                "Top": 273.5,
+                "Height": 10.5,
+                "Width": 75.5
+              }
+            ],
+            "MaxHeight": 10.5,
+            "MinTop": 272.5
+          },
+          {
+            "LineText": "Nulla varius at dolor eget suscipit.",
+            "Words": [
+              {
+                "WordText": "Nulla",
+                "Left": 378,
+                "Top": 285.5,
+                "Height": 10.5,
+                "Width": 39.5
+              },
+              {
+                "WordText": "varius",
+                "Left": 426,
+                "Top": 286.5,
+                "Height": 10.5,
+                "Width": 47
+              },
+              {
+                "WordText": "at",
+                "Left": 483,
+                "Top": 287.5,
+                "Height": 9.5,
+                "Width": 13
+              },
+              {
+                "WordText": "dolor",
+                "Left": 506.5,
+                "Top": 287.5,
+                "Height": 10.5,
+                "Width": 38.5
+              },
+              {
+                "WordText": "eget",
+                "Left": 554.5,
+                "Top": 288,
+                "Height": 12.5,
+                "Width": 29.5
+              },
+              {
+                "WordText": "suscipit.",
+                "Left": 595.5,
+                "Top": 288,
+                "Height": 12.5,
+                "Width": 68
+              }
+            ],
+            "MaxHeight": 12.5,
+            "MinTop": 285.5
+          },
+          {
+            "LineText": "Proin metus metus, cond imentum eget",
+            "Words": [
+              {
+                "WordText": "Proin",
+                "Left": 379,
+                "Top": 299.5,
+                "Height": 10.5,
+                "Width": 38.5
+              },
+              {
+                "WordText": "metus",
+                "Left": 426,
+                "Top": 300.5,
+                "Height": 9.5,
+                "Width": 39.5
+              },
+              {
+                "WordText": "metus,",
+                "Left": 473,
+                "Top": 301,
+                "Height": 10,
+                "Width": 46.5
+              },
+              {
+                "WordText": "cond",
+                "Left": 530,
+                "Top": 301,
+                "Height": 10,
+                "Width": 30.5
+              },
+              {
+                "WordText": "imentum",
+                "Left": 564,
+                "Top": 301,
+                "Height": 10.5,
+                "Width": 53
+              },
+              {
+                "WordText": "eget",
+                "Left": 626,
+                "Top": 302,
+                "Height": 11.5,
+                "Width": 30.5
+              }
+            ],
+            "MaxHeight": 11.5,
+            "MinTop": 299.5
+          },
+          {
+            "LineText": "diam Lit, trist@ue dictum nisi,",
+            "Words": [
+              {
+                "WordText": "diam",
+                "Left": 377.5,
+                "Top": 312.5,
+                "Height": 9.5,
+                "Width": 32
+              },
+              {
+                "WordText": "Lit,",
+                "Left": 418.5,
+                "Top": 313.5,
+                "Height": 10.5,
+                "Width": 20.5
+              },
+              {
+                "WordText": "trist@ue",
+                "Left": 450.5,
+                "Top": 312.5,
+                "Height": 13,
+                "Width": 70
+              },
+              {
+                "WordText": "dictum",
+                "Left": 529,
+                "Top": 313.5,
+                "Height": 10.5,
+                "Width": 48
+              },
+              {
+                "WordText": "nisi,",
+                "Left": 586,
+                "Top": 314.5,
+                "Height": 10.5,
+                "Width": 37.5
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 312.5
+          },
+          {
+            "LineText": "1234567",
+            "Words": [
+              {
+                "WordText": "1234567",
+                "Left": 753.5,
+                "Top": 111,
+                "Height": 13,
+                "Width": 64.5
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 111
+          },
+          {
+            "LineText": "PHONE:",
+            "Words": [
+              {
+                "WordText": "PHONE:",
+                "Left": 72.5,
+                "Top": 264.5,
+                "Height": 13,
+                "Width": 52.5
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 264.5
+          },
+          {
+            "LineText": "XYZ Back Door",
+            "Words": [
+              {
+                "WordText": "XYZ",
+                "Left": 181,
+                "Top": 188.5,
+                "Height": 11.5,
+                "Width": 27
+              },
+              {
+                "WordText": "Back",
+                "Left": 220,
+                "Top": 188.5,
+                "Height": 12.5,
+                "Width": 36
+              },
+              {
+                "WordText": "Door",
+                "Left": 268,
+                "Top": 189.5,
+                "Height": 11.5,
+                "Width": 36
+              }
+            ],
+            "MaxHeight": 12.5,
+            "MinTop": 188.5
+          },
+          {
+            "LineText": "789 Main Ave",
+            "Words": [
+              {
+                "WordText": "789",
+                "Left": 182,
+                "Top": 203.5,
+                "Height": 13,
+                "Width": 27
+              },
+              {
+                "WordText": "Main",
+                "Left": 219.5,
+                "Top": 204.5,
+                "Height": 12,
+                "Width": 36.5
+              },
+              {
+                "WordText": "Ave",
+                "Left": 267.5,
+                "Top": 204.5,
+                "Height": 12,
+                "Width": 27
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 203.5
+          },
+          {
+            "LineText": "Anytown, USA",
+            "Words": [
+              {
+                "WordText": "Anytown,",
+                "Left": 180,
+                "Top": 219,
+                "Height": 17,
+                "Width": 74
+              },
+              {
+                "WordText": "USA",
+                "Left": 267.5,
+                "Top": 220,
+                "Height": 12.5,
+                "Width": 27
+              }
+            ],
+            "MaxHeight": 17,
+            "MinTop": 219
+          },
+          {
+            "LineText": "(222) 222-2222",
+            "Words": [
+              {
+                "WordText": "(222)",
+                "Left": 146,
+                "Top": 281,
+                "Height": 14,
+                "Width": 42
+              },
+              {
+                "WordText": "222-2222",
+                "Left": 201,
+                "Top": 281,
+                "Height": 13.5,
+                "Width": 75
+              }
+            ],
+            "MaxHeight": 14,
+            "MinTop": 281
+          },
+          {
+            "LineText": "DATE .",
+            "Words": [
+              {
+                "WordText": "DATE",
+                "Left": 695,
+                "Top": 142.5,
+                "Height": 13,
+                "Width": 35.5
+              },
+              {
+                "WordText": ".",
+                "Left": 735,
+                "Top": 153,
+                "Height": 1.5,
+                "Width": 2.5
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 142.5
+          },
+          {
+            "LineText": "DATE REQUIRED:",
+            "Words": [
+              {
+                "WordText": "DATE",
+                "Left": 695,
+                "Top": 174,
+                "Height": 13,
+                "Width": 35.5
+              },
+              {
+                "WordText": "REQUIRED:",
+                "Left": 743,
+                "Top": 174.5,
+                "Height": 14,
+                "Width": 81
+              }
+            ],
+            "MaxHeight": 14,
+            "MinTop": 174
+          },
+          {
+            "LineText": "UNIT PRICE",
+            "Words": [
+              {
+                "WordText": "UNIT",
+                "Left": 729,
+                "Top": 366.5,
+                "Height": 13.5,
+                "Width": 36.5
+              },
+              {
+                "WordText": "PRICE",
+                "Left": 777,
+                "Top": 367.5,
+                "Height": 13,
+                "Width": 45.5
+              }
+            ],
+            "MaxHeight": 13.5,
+            "MinTop": 366.5
+          },
+          {
+            "LineText": "08/07/2921",
+            "Words": [
+              {
+                "WordText": "08/07/2921",
+                "Left": 839,
+                "Top": 144,
+                "Height": 13,
+                "Width": 93
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 144
+          },
+          {
+            "LineText": "09/01/2021",
+            "Words": [
+              {
+                "WordText": "09/01/2021",
+                "Left": 838,
+                "Top": 175.5,
+                "Height": 13,
+                "Width": 94
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 175.5
+          },
+          {
+            "LineText": "COST",
+            "Words": [
+              {
+                "WordText": "COST",
+                "Left": 882.5,
+                "Top": 368.5,
+                "Height": 13,
+                "Width": 37.5
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 368.5
+          },
+          {
+            "LineText": "LINE #",
+            "Words": [
+              {
+                "WordText": "LINE",
+                "Left": 120.5,
+                "Top": 361.5,
+                "Height": 13,
+                "Width": 39.5
+              },
+              {
+                "WordText": "#",
+                "Left": 171.5,
+                "Top": 361.5,
+                "Height": 13,
+                "Width": 9.5
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 361.5
+          },
+          {
+            "LineText": "1",
+            "Words": [
+              {
+                "WordText": "1",
+                "Left": 197.5,
+                "Top": 402.5,
+                "Height": 11.5,
+                "Width": 6
+              }
+            ],
+            "MaxHeight": 11.5,
+            "MinTop": 402.5
+          },
+          {
+            "LineText": "2",
+            "Words": [
+              {
+                "WordText": "2",
+                "Left": 196.5,
+                "Top": 441,
+                "Height": 12,
+                "Width": 7
+              }
+            ],
+            "MaxHeight": 12,
+            "MinTop": 441
+          },
+          {
+            "LineText": "3",
+            "Words": [
+              {
+                "WordText": "3",
+                "Left": 196.5,
+                "Top": 480,
+                "Height": 12.5,
+                "Width": 7
+              }
+            ],
+            "MaxHeight": 12.5,
+            "MinTop": 480
+          },
+          {
+            "LineText": "4",
+            "Words": [
+              {
+                "WordText": "4",
+                "Left": 196,
+                "Top": 520.5,
+                "Height": 11,
+                "Width": 7.5
+              }
+            ],
+            "MaxHeight": 11,
+            "MinTop": 520.5
+          },
+          {
+            "LineText": "QTY.",
+            "Words": [
+              {
+                "WordText": "QTY.",
+                "Left": 252.5,
+                "Top": 363,
+                "Height": 14,
+                "Width": 34
+              }
+            ],
+            "MaxHeight": 14,
+            "MinTop": 363
+          },
+          {
+            "LineText": "7",
+            "Words": [
+              {
+                "WordText": "7",
+                "Left": 326,
+                "Top": 403.5,
+                "Height": 12,
+                "Width": 7.5
+              }
+            ],
+            "MaxHeight": 12,
+            "MinTop": 403.5
+          },
+          {
+            "LineText": "6",
+            "Words": [
+              {
+                "WordText": "6",
+                "Left": 325,
+                "Top": 442,
+                "Height": 13,
+                "Width": 8.5
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 442
+          },
+          {
+            "LineText": "8",
+            "Words": [
+              {
+                "WordText": "8",
+                "Left": 325,
+                "Top": 481,
+                "Height": 13,
+                "Width": 8
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 481
+          },
+          {
+            "LineText": "2",
+            "Words": [
+              {
+                "WordText": "2",
+                "Left": 325,
+                "Top": 520.5,
+                "Height": 13,
+                "Width": 7
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 520.5
+          },
+          {
+            "LineText": "ITEM #",
+            "Words": [
+              {
+                "WordText": "ITEM",
+                "Left": 363.5,
+                "Top": 364,
+                "Height": 12.5,
+                "Width": 36.5
+              },
+              {
+                "WordText": "#",
+                "Left": 410.5,
+                "Top": 365,
+                "Height": 11.5,
+                "Width": 8.5
+              }
+            ],
+            "MaxHeight": 12.5,
+            "MinTop": 364
+          },
+          {
+            "LineText": "123",
+            "Words": [
+              {
+                "WordText": "123",
+                "Left": 416.5,
+                "Top": 403.5,
+                "Height": 13,
+                "Width": 26
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 403.5
+          },
+          {
+            "LineText": "122",
+            "Words": [
+              {
+                "WordText": "122",
+                "Left": 416.5,
+                "Top": 442.5,
+                "Height": 13,
+                "Width": 26
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 442.5
+          },
+          {
+            "LineText": "124",
+            "Words": [
+              {
+                "WordText": "124",
+                "Left": 415.5,
+                "Top": 483,
+                "Height": 12,
+                "Width": 28
+              }
+            ],
+            "MaxHeight": 12,
+            "MinTop": 483
+          },
+          {
+            "LineText": "143",
+            "Words": [
+              {
+                "WordText": "143",
+                "Left": 415.5,
+                "Top": 521,
+                "Height": 13.5,
+                "Width": 26.5
+              }
+            ],
+            "MaxHeight": 13.5,
+            "MinTop": 521
+          },
+          {
+            "LineText": "DESCRIPTION",
+            "Words": [
+              {
+                "WordText": "DESCRIPTION",
+                "Left": 525.5,
+                "Top": 365,
+                "Height": 14,
+                "Width": 103
+              }
+            ],
+            "MaxHeight": 14,
+            "MinTop": 365
+          },
+          {
+            "LineText": "Green Balls",
+            "Words": [
+              {
+                "WordText": "Green",
+                "Left": 601.5,
+                "Top": 397,
+                "Height": 13.5,
+                "Width": 46.5
+              },
+              {
+                "WordText": "Balls",
+                "Left": 660,
+                "Top": 399,
+                "Height": 11.5,
+                "Width": 45.5
+              }
+            ],
+            "MaxHeight": 13.5,
+            "MinTop": 397
+          },
+          {
+            "LineText": "16\" Diameter",
+            "Words": [
+              {
+                "WordText": "16\"",
+                "Left": 593,
+                "Top": 413,
+                "Height": 13,
+                "Width": 24
+              },
+              {
+                "WordText": "Diameter",
+                "Left": 630.5,
+                "Top": 414,
+                "Height": 13,
+                "Width": 74
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 413
+          },
+          {
+            "LineText": "Red Balls",
+            "Words": [
+              {
+                "WordText": "Red",
+                "Left": 620.5,
+                "Top": 437.5,
+                "Height": 12,
+                "Width": 27.5
+              },
+              {
+                "WordText": "Balls",
+                "Left": 659,
+                "Top": 437.5,
+                "Height": 12.5,
+                "Width": 45.5
+              }
+            ],
+            "MaxHeight": 12.5,
+            "MinTop": 437.5
+          },
+          {
+            "LineText": "12\" Diameter",
+            "Words": [
+              {
+                "WordText": "12\"",
+                "Left": 592,
+                "Top": 452,
+                "Height": 12.5,
+                "Width": 25
+              },
+              {
+                "WordText": "Diameter",
+                "Left": 630.5,
+                "Top": 453,
+                "Height": 12.5,
+                "Width": 74
+              }
+            ],
+            "MaxHeight": 12.5,
+            "MinTop": 452
+          },
+          {
+            "LineText": "Blue Balls",
+            "Words": [
+              {
+                "WordText": "Blue",
+                "Left": 611,
+                "Top": 476.5,
+                "Height": 12.5,
+                "Width": 37
+              },
+              {
+                "WordText": "Balls",
+                "Left": 659,
+                "Top": 476.5,
+                "Height": 12.5,
+                "Width": 45.5
+              }
+            ],
+            "MaxHeight": 12.5,
+            "MinTop": 476.5
+          },
+          {
+            "LineText": "24\" Diameter",
+            "Words": [
+              {
+                "WordText": "24\"",
+                "Left": 592,
+                "Top": 491.5,
+                "Height": 12,
+                "Width": 24.5
+              },
+              {
+                "WordText": "Diameter",
+                "Left": 630.5,
+                "Top": 492.5,
+                "Height": 12,
+                "Width": 74
+              }
+            ],
+            "MaxHeight": 12,
+            "MinTop": 491.5
+          },
+          {
+            "LineText": "Orange Balls",
+            "Words": [
+              {
+                "WordText": "Orange",
+                "Left": 591,
+                "Top": 515,
+                "Height": 16,
+                "Width": 56
+              },
+              {
+                "WordText": "Balls",
+                "Left": 658,
+                "Top": 517,
+                "Height": 12,
+                "Width": 46.5
+              }
+            ],
+            "MaxHeight": 16,
+            "MinTop": 515
+          },
+          {
+            "LineText": "6\" Diameter",
+            "Words": [
+              {
+                "WordText": "6\"",
+                "Left": 600.5,
+                "Top": 531,
+                "Height": 13,
+                "Width": 16
+              },
+              {
+                "WordText": "Diameter",
+                "Left": 629.5,
+                "Top": 531.5,
+                "Height": 12.5,
+                "Width": 74
+              }
+            ],
+            "MaxHeight": 13,
+            "MinTop": 531
+          },
+          {
+            "LineText": "TOTAL QTY.",
+            "Words": [
+              {
+                "WordText": "TOTAL",
+                "Left": 667,
+                "Top": 597,
+                "Height": 12.5,
+                "Width": 46
+              },
+              {
+                "WordText": "QTY.",
+                "Left": 724.5,
+                "Top": 597,
+                "Height": 15,
+                "Width": 34
+              }
+            ],
+            "MaxHeight": 15,
+            "MinTop": 597
+          },
+          {
+            "LineText": "23",
+            "Words": [
+              {
+                "WordText": "23",
+                "Left": 668,
+                "Top": 613,
+                "Height": 12,
+                "Width": 15.5
+              }
+            ],
+            "MaxHeight": 12,
+            "MinTop": 613
+          },
+          {
+            "LineText": "TOTAL COST",
+            "Words": [
+              {
+                "WordText": "TOTAL",
+                "Left": 666,
+                "Top": 661.5,
+                "Height": 12.5,
+                "Width": 46.5
+              },
+              {
+                "WordText": "COST",
+                "Left": 723.5,
+                "Top": 661.5,
+                "Height": 13.5,
+                "Width": 37.5
+              }
+            ],
+            "MaxHeight": 13.5,
+            "MinTop": 661.5
+          },
+          {
+            "LineText": "$478 .",
+            "Words": [
+              {
+                "WordText": "$478",
+                "Left": 667,
+                "Top": 676.5,
+                "Height": 14,
+                "Width": 35.5
+              },
+              {
+                "WordText": ".",
+                "Left": 707,
+                "Top": 687,
+                "Height": 2.5,
+                "Width": 2.5
+              }
+            ],
+            "MaxHeight": 14,
+            "MinTop": 676.5
+          },
+          {
+            "LineText": "$18.99",
+            "Words": [
+              {
+                "WordText": "$18.99",
+                "Left": 785.5,
+                "Top": 445,
+                "Height": 14,
+                "Width": 56
+              }
+            ],
+            "MaxHeight": 14,
+            "MinTop": 445
+          },
+          {
+            "LineText": "$25.€6",
+            "Words": [
+              {
+                "WordText": "$25.€6",
+                "Left": 785.5,
+                "Top": 484.5,
+                "Height": 14,
+                "Width": 55
+              }
+            ],
+            "MaxHeight": 14,
+            "MinTop": 484.5
+          },
+          {
+            "LineText": "$15.00",
+            "Words": [
+              {
+                "WordText": "$15.00",
+                "Left": 784.5,
+                "Top": 524,
+                "Height": 14,
+                "Width": 56
+              }
+            ],
+            "MaxHeight": 14,
+            "MinTop": 524
+          }
+        ],
+        "HasOverlay": true,
+        "Message": "Total lines: 62"
+      },
+      "FileParseExitCode": 1,
+      "TextOrientation": "0",
+      "ParsedText": "INVOICE TO: xyz Company\tPURCHASE ORDER\t1234567\t\r\n123 State Street\t\r\nAny town, USA\tSome fine print here, Lorem ipsum\tDATE .\t08/07/2921\t\r\ndolor sit amet. consectetur\t\r\nSHIP TO LOCATION:\tadipiscing e I ht. Integer at enim\tDATE REQUIRED:\t09/01/2021\t\r\ntempor eros aliquet euismod et in\t\r\nXYZ Back Door\tTelis. Duis ld euismod magna. Lorem\t\r\n789 Main Ave\tipsum dolor s ft amet, consectetur\t\r\nAnytown, USA\tad] piscing elit.\t\r\nNul lam eget SUSCi it orci. sit amet\t\r\nPHONE:\ttrdstique justo.\taecenas aliquam\t\r\nconsectetur tel lus ac fermentum.\t\r\n(222) 222-2222\tNulla varius at dolor eget suscipit.\t\r\nProin metus metus, cond imentum eget\t\r\ndiam Lit, trist@ue dictum nisi,\t\r\nLINE #\tQTY.\tITEM #\tDESCRIPTION\tUNIT PRICE\tCOST\t\r\n1\t7\t123\tGreen Balls\t\r\n16\" Diameter\t\r\n2\t6\t122\tRed Balls\t$18.99\t\r\n12\" Diameter\t\r\n3\t8\t124\tBlue Balls\t$25.€6\t\r\n24\" Diameter\t\r\n4\t2\t143\tOrange Balls\t$15.00\t\r\n6\" Diameter\t\r\nTOTAL QTY.\t\r\n23\t\r\nTOTAL COST\t\r\n$478 .\t\r\n",
+      "ErrorMessage": "",
+      "ErrorDetails": ""
+    }
+  ],
+  "OCRExitCode": 1,
+  "IsErroredOnProcessing": false,
+  "ProcessingTimeInMilliseconds": 0.859,
+  "SearchablePDFURL": "Searchable PDF not generated as it was not requested."
+}
