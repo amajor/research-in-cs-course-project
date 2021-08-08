@@ -67,36 +67,57 @@ def get_row_value(cell):
 
 def get_item_line_number(item_table, item_row):
     """Gets the item's line number from the table"""
-    return item_table.at[item_row, 'LINE_NUM']
+    try:
+        return item_table.at[item_row, 'LINE_NUM']
+    except KeyError:
+        return "[not available]"
 
 
 def get_item_quantity(item_table, item_row):
     """Gets the item's quantity from the table"""
-    return item_table.at[item_row, 'QTY']
+    try:
+        return item_table.at[item_row, 'QTY']
+    except KeyError:
+        return "[not available]"
 
 
 def get_item_unit_of_measure(item_table, item_row):
     """Gets the item's unit of measure from the table"""
-    return item_table.at[item_row, 'UOM']
+    try:
+        return item_table.at[item_row, 'UOM']
+    except KeyError:
+        return "[not available]"
 
 
 def get_item_number(item_table, item_row):
     """Gets the item's identification number from the table"""
-    value = item_table.at[item_row, 'ITEM_NUM']
-    value_as_int = int(value)
-    return str(value_as_int)
+    try:
+        value = item_table.at[item_row, 'ITEM_NUM']
+        value_as_int = int(value)
+        return str(value_as_int)
+    except KeyError:
+        return "[not available]"
 
 
 def get_item_description(item_table, item_row):
     """Gets the item's description from the table"""
-    return item_table.at[item_row, 'DESC']
+    try:
+        return item_table.at[item_row, 'DESC']
+    except KeyError:
+        return "[not available]"
 
 
 def get_item_unit_price(item_table, item_row):
     """Gets the item's unit price from the table"""
-    return item_table.at[item_row, 'UNIT_PRICE']
+    try:
+        return item_table.at[item_row, 'UNIT_PRICE']
+    except KeyError:
+        return "[not available]"
 
 
 def get_item_cost(item_table, item_row):
     """Gets the item's total order cost from the table"""
-    return item_table.at[item_row, 'COST']
+    try:
+        return item_table.at[item_row, 'COST']
+    except KeyError:
+        return "[not available]"

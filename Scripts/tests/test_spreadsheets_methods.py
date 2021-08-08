@@ -107,7 +107,8 @@ class SpreadsheetsMethods(unittest.TestCase):
 
     @parameterized.expand([
         ["Row 1 gives line '1'", ITEM_TABLE, 0, 1],
-        ["Row 2 gives line '2'", ITEM_TABLE, 1, 2]
+        ["Row 2 gives line '2'", ITEM_TABLE, 1, 2],
+        ["Row 3 gives '[not available]'", ITEM_TABLE, 2, '[not available]']
     ])
     def test_get_item_line_number(self, name, table, row, expected):
         actual = get_item_line_number(table, row)
@@ -115,7 +116,8 @@ class SpreadsheetsMethods(unittest.TestCase):
 
     @parameterized.expand([
         ["Row 1 gives quantity 7", ITEM_TABLE, 0, 7],
-        ["Row 2 gives quantity 6", ITEM_TABLE, 1, 6]
+        ["Row 2 gives quantity 6", ITEM_TABLE, 1, 6],
+        ["Row 3 gives '[not available]'", ITEM_TABLE, 2, '[not available]']
     ])
     def test_get_item_quantity(self, name, table, row, expected):
         actual = get_item_quantity(table, row)
@@ -123,7 +125,8 @@ class SpreadsheetsMethods(unittest.TestCase):
 
     @parameterized.expand([
         ["Row 1 gives 'CASE'", ITEM_TABLE, 0, 'CASE'],
-        ["Row 2 gives 'PALLET'", ITEM_TABLE, 1, 'PALLET']
+        ["Row 2 gives 'PALLET'", ITEM_TABLE, 1, 'PALLET'],
+        ["Row 3 gives '[not available]'", ITEM_TABLE, 2, '[not available]']
     ])
     def test_get_item_unit_of_measure(self, name, table, row, expected):
         actual = get_item_unit_of_measure(table, row)
@@ -131,7 +134,8 @@ class SpreadsheetsMethods(unittest.TestCase):
 
     @parameterized.expand([
         ["Row 1 gives item number '123'", ITEM_TABLE, 0, '123'],
-        ["Row 2 gives item number '124'", ITEM_TABLE, 1, '124']
+        ["Row 2 gives item number '124'", ITEM_TABLE, 1, '124'],
+        ["Row 3 gives '[not available]'", ITEM_TABLE, 2, '[not available]']
     ])
     def test_get_item_number(self, name, table, row, expected):
         actual = get_item_number(table, row)
@@ -139,7 +143,8 @@ class SpreadsheetsMethods(unittest.TestCase):
 
     @parameterized.expand([
         ["Row 1 gives 'Item 1'", ITEM_TABLE, 0, 'Item 1'],
-        ["Row 2 gives 'Item 2'", ITEM_TABLE, 1, 'Item 2']
+        ["Row 2 gives 'Item 2'", ITEM_TABLE, 1, 'Item 2'],
+        ["Row 3 gives '[not available]'", ITEM_TABLE, 2, '[not available]']
     ])
     def test_get_item_description(self, name, table, row, expected):
         actual = get_item_description(table, row)
@@ -147,7 +152,8 @@ class SpreadsheetsMethods(unittest.TestCase):
 
     @parameterized.expand([
         ["Row 1 gives 20.00", ITEM_TABLE, 0, 20.00],
-        ["Row 2 gives 18.00", ITEM_TABLE, 1, 18.00]
+        ["Row 2 gives 18.00", ITEM_TABLE, 1, 18.00],
+        ["Row 3 gives '[not available]'", ITEM_TABLE, 2, '[not available]']
     ])
     def test_get_item_unit_price(self, name, table, row, expected):
         actual = get_item_unit_price(table, row)
@@ -155,7 +161,8 @@ class SpreadsheetsMethods(unittest.TestCase):
 
     @parameterized.expand([
         ["Row 1 gives 140.00", ITEM_TABLE, 0, 140.00],
-        ["Row 2 gives 108.00", ITEM_TABLE, 1, 108.00]
+        ["Row 2 gives 108.00", ITEM_TABLE, 1, 108.00],
+        ["Row 3 gives '[not available]'", ITEM_TABLE, 2, '[not available]']
     ])
     def test_get_item_cost(self, name, table, row, expected):
         actual = get_item_cost(table, row)
