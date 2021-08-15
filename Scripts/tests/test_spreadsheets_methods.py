@@ -9,14 +9,14 @@ from spreadsheets.methods import get_column_value, get_row_value, get_po_number,
 FILE_PATH = '../documents/ORDERS.xlsx'
 SHEET_NAME = 'Order Sample 1'
 
-# The workbook to pull values from
+"""The workbook to pull values from"""
 WORKBOOK = pd.read_excel(
     FILE_PATH,
     sheet_name=SHEET_NAME,
     header=None
 )
 
-# Mapping of the values to cells
+"""Mapping of the values to cells"""
 CELLS = {
     "poNum": "B1",
     "billTo": "B4",
@@ -26,7 +26,7 @@ CELLS = {
     "totalCost": "G12"
 }
 
-# Fake item table for testing
+"""Fake item table for testing"""
 ITEM_TABLE = pd.DataFrame(
     [
         [1, 7, 'CASE', '123', 'Item 1', 20, 140],

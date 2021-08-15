@@ -41,7 +41,7 @@ def get_total_cost(workbook, cells):
 def get_cell_value(workbook, cell):
     """Gets the value of the cell (ex: 'B1') from a workbook"""
     if cell == "":
-        # No cell was provided.
+        """No cell was provided."""
         return "[cell not mapped]"
 
     column = get_column_value(cell)
