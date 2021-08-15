@@ -147,9 +147,9 @@ When templates maintain fixed positions and are consistent, understanding the da
 However, if the template of the structured data isn't followed, the changes or variations require new rules. This might be a result of different regulations for a region requiring additional table columns in a purchase order, or larger customers using different systems that generate the files being provided.
 
 \begin{figure}[ht]
-\centerline{\includegraphics[width=\columnwidth]{ORDER_2_scanned.png}}
+\centerline{\includegraphics[width=\columnwidth]{Spreadsheet2.png}}
 \caption{A templated spreadsheet for a purchase order containing the same information as ``Fig.~\ref{figSpreadsheet1}'', but with a different layout.}
-\label{figScanned2}
+\label{figSpreadsheet2}
 \end{figure}
 
 Documents that contain the same type of information but in different designs and layouts fall into the category of semi-structured data. The keys in key-value pairs are the same across all documents, but the position on the page might vary, as seen in Fig. 4. Similarly, we might see scanned images like Fig. 5 with varied layouts.
@@ -230,12 +230,13 @@ This single pipeline solution has proven that it can scale and scale well!
 \appendices
 
 \newpage
-\section{Python Methods to Collect Data from a Spreadsheet (``Fig.~\ref{figSpreadsheet1}'')}
+\section{Python Methods to Collect Data from a Spreadsheet}
     \subsection{spreadsheets/methods.py}
     \lstinputlisting[language=Python]{Scripts/spreadsheets/methods.py}
 
     \newpage
     \subsection{spreadsheets/excel\_order\_one.py}
+    These mappings are specific to the spreadsheet represented in ``Fig.~\ref{figSpreadsheet1}''.
     \lstinputlisting[language=Python]{Scripts/spreadsheets/excel_order_one.py}
 
 \newpage
@@ -247,7 +248,22 @@ This single pipeline solution has proven that it can scale and scale well!
     \subsection{tests/test\_excel\_order\_one.py}
     \lstinputlisting[language=Python]{Scripts/tests/test_excel_order_one.py}
 
-% \section{Data Collected as JSON from a Scanned Image (``Fig.~\ref{figScanned1}'')}
-% \lstinputlisting{Scripts/documents/OCRSpace_Order1.json}
+% \newpage
+% \section{Data Collected as JSON from a Scanned Image}
+% Below is a very small sampling of some lines at the beginning of a JSON file containing the data recognized from the scanned image (``Fig.~\ref{figScanned1}''):
+% \lstinputlisting[linerange={1-29}]{Scripts/documents/OCRSpace_Order1.json}
+% Below is a very small sampling of some lines at the end of a JSON file containing the data recognized from the scanned image (``Fig.~\ref{figScanned1}''):
+% \lstinputlisting[linerange={1508-1519}]{Scripts/documents/OCRSpace_Order1.json}
+
+\newpage
+\section{Python Methods to Collect Data from a Spreadsheet}
+    \subsection{spreadsheets/excel\_order\_two.py}
+    These mappings are specific to the spreadsheet represented in ``Fig.~\ref{figSpreadsheet2}''.
+    \lstinputlisting[language=Python]{Scripts/spreadsheets/excel_order_two.py}
+
+\newpage
+\section{Unit Tests for Python Mappings for Spreadsheet Order Two}
+    \subsection{tests/test\_excel\_order\_two.py}
+    \lstinputlisting[language=Python]{Scripts/tests/test_excel_order_two.py}
 
 \end{document}
