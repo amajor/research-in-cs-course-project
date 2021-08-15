@@ -5,9 +5,59 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{color} 
+\usepackage{listings}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \graphicspath{ {Images/} }
+
+% Python Syntax Styling
+\definecolor{Code}{rgb}{0,0,0} 
+\definecolor{Decorators}{rgb}{0.5,0.5,0.5} 
+\definecolor{Numbers}{rgb}{0.5,0,0} 
+\definecolor{MatchingBrackets}{rgb}{0.25,0.5,0.5} 
+\definecolor{Keywords}{rgb}{0,0,1} 
+\definecolor{self}{rgb}{0,0,0} 
+\definecolor{Strings}{rgb}{0,0.63,0} 
+\definecolor{Comments}{rgb}{0,0.63,1} 
+\definecolor{Backquotes}{rgb}{0,0,0} 
+\definecolor{Classname}{rgb}{0,0,0} 
+\definecolor{FunctionName}{rgb}{0,0,0} 
+\definecolor{Operators}{rgb}{0,0,0} 
+\definecolor{Background}{rgb}{0.98,0.98,0.98} 
+ 
+\lstdefinelanguage{Python}{ 
+numbers=left, 
+numberstyle=\footnotesize, 
+numbersep=1em, 
+xleftmargin=1em, 
+framextopmargin=2em, 
+framexbottommargin=2em, 
+showspaces=false, 
+showtabs=false, 
+showstringspaces=false, 
+frame=l, 
+tabsize=4, 
+% Basic 
+basicstyle=\ttfamily\small, 
+backgroundcolor=\color{Background}, 
+% Comments 
+commentstyle=\color{Comments}\slshape, 
+% Strings 
+stringstyle=\color{Strings}, 
+morecomment=[s][\color{Strings}]{"""}{"""}, 
+morecomment=[s][\color{Strings}]{'''}{'''}, 
+% keywords 
+morekeywords={import,from,class,def,for,while,if,is,in,elif,else,not,and,or,print,break,continue,return,True,False,None,access,as,,del,except,exec,finally,global,import,lambda,pass,print,raise,try,assert}, 
+keywordstyle={\color{Keywords}\bfseries}, 
+% additional keywords 
+morekeywords={[2]@invariant,pylab,numpy,np,scipy}, 
+keywordstyle={[2]\color{Decorators}\slshape}, 
+emph={self}, 
+emphstyle={\color{self}\slshape}, 
+% 
+}
+% End Python Syntax Styling
 
 \begin{document}
 
@@ -178,10 +228,26 @@ This single pipeline solution has proven that it can scale and scale well!
 
 \onecolumn
 \appendices
-\section{Python Methods to Collect Data from a Spreadsheet (``Fig.~\ref{figSpreadsheet1}'')}
-%[Spreadsheet methods and order 1]
 
-\section{Data Collected as JSON from a Scanned Image (``Fig.~\ref{figScanned1}'')}
-%[OCRSpace_Order1.json]
+\newpage
+\section{Python Methods to Collect Data from a Spreadsheet (``Fig.~\ref{figSpreadsheet1}'')}
+    \subsection{spreadsheets/methods.py}
+    \lstinputlisting[language=Python]{Scripts/spreadsheets/methods.py}
+
+    \newpage
+    \subsection{spreadsheets/excel\_order\_one.py}
+    \lstinputlisting[language=Python]{Scripts/spreadsheets/excel_order_one.py}
+
+\newpage
+\section{Unit Tests for Python Methods in Appendix A}
+    \subsection{tests/test\_spreadsheets\_methods.py}
+    \lstinputlisting[language=Python]{Scripts/tests/test_spreadsheets_methods.py}
+
+    \newpage
+    \subsection{tests/test\_excel\_order\_one.py}
+    \lstinputlisting[language=Python]{Scripts/tests/test_excel_order_one.py}
+
+% \section{Data Collected as JSON from a Scanned Image (``Fig.~\ref{figScanned1}'')}
+% \lstinputlisting{Scripts/documents/OCRSpace_Order1.json}
 
 \end{document}

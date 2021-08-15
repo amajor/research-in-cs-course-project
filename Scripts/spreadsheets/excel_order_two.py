@@ -3,13 +3,14 @@ import pandas as pd
 FILE_PATH = '../documents/ORDERS.xlsx'
 SHEET_NAME = 'Order Sample 2'
 
-# The workbook to pull values from
+"""The workbook to pull values from"""
 WORKBOOK = pd.read_excel(
     FILE_PATH,
     sheet_name=SHEET_NAME,
     header=None
 )
 
+"""The table for item information"""
 ITEM_TABLE = pd.read_excel(
     FILE_PATH,
     sheet_name=SHEET_NAME,
@@ -17,9 +18,8 @@ ITEM_TABLE = pd.read_excel(
     skiprows=3,
     nrows=4
 )
-# Mapping column names for item table
+"""Mapping column names for item table"""
 ITEM_TABLE.columns = [
-    # 'LINE_NUM',    # Line #
     'DESC',        # DESC
     'UNIT_PRICE',  # PRICE
     'QTY',         # QTY
@@ -28,7 +28,7 @@ ITEM_TABLE.columns = [
     'COST'         # COST
 ]
 
-# Mapping of the values to cells
+"""Mapping of the values to cells"""
 ORDER_TWO_CELLS = {
     "poNum": "A2",
     "billTo": "",
