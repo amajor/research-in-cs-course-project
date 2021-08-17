@@ -10,15 +10,17 @@ The following gives and overview of a report structure. You can adjust to fit yo
 - The Details ( 5 to 8  pages)
 - Conclusion and further work (1 page)
 
-## Grading Rubric (Paper)
+## Grading Rubric
 
 | LEVEL | DESCRIPTION |
 | ----- | ----------- |
-| Poor  | not relevant to the topic |
-| Marginal | not insightful |
-| Acceptable | general with details |
-| Good | summary with some details |
-| Honors | Summary presented as an abstract with details such as concepts, relevance, applications, etc. |
+| (1) Poor  | not relevant to the topic |
+| (2) Marginal | not insightful |
+| (3) Acceptable | general with details |
+| (4) Good | summary with some details |
+| (5) Honors | Summary presented as an abstract with details such as concepts, relevance, applications, etc. |
+
+### Paper
 
 | | Poor  | Marginal | Acceptable | Good | Honors |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +33,7 @@ The following gives and overview of a report structure. You can adjust to fit yo
 | Clarity in writing, tables, graphs and illustrations | | | | |
 | Presentation | | | | |
 
-### Grading Rubric (Presentation)
+### Presentation
 
 | | 1 | 2 | 3 | 4 | 5 |
 | --- | --- | --- | --- | --- | --- |
