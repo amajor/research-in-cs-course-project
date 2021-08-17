@@ -10,7 +10,7 @@ The following gives and overview of a report structure. You can adjust to fit yo
 - The Details ( 5 to 8  pages)
 - Conclusion and further work (1 page)
 
-## Grading Rubric
+## Grading Rubric (Paper)
 
 | LEVEL | DESCRIPTION |
 | ----- | ----------- |
@@ -30,3 +30,13 @@ The following gives and overview of a report structure. You can adjust to fit yo
 | Organization of the manuscript | | | | |
 | Clarity in writing, tables, graphs and illustrations | | | | |
 | Presentation | | | | |
+
+### Grading Rubric (Presentation)
+
+| | 1 | 2 | 3 | 4 | 5 |
+| --- | --- | --- | --- | --- | --- |
+| To what extent does the student’s presentation communicate both the merits of the research project and the research process that the student went through to complete the project? | | | | |
+| To what extent can the student communicate effectively about the project? Can the student provide cogent responses to questions? Can the student defend the research proposal suggestions made?  | | | | |
+| To what extent the student has displayed an extensive literature review when conducting the project? | | | | |
+
+**Total: ??/15**
