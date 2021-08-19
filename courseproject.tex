@@ -43,21 +43,23 @@ Many companies receive input from users in a variety of ways. Some may email, so
 
 For a human to run submitted information through a process, they need to read the data in whichever format it is received, then understand it enough to enter it into the appropriate system. This basic decision-making is generally not a difficult task, but when needed at a large scale, can become not only tiresome but prone to entry errors. 
 
-In a controlled study in 2009 at UNLV, a set of 215 students were provided with 30 datasheets that contained six types of data to process. When the students only used visual confirmation of the correctness of the data, they made an average of 10.23 errors. Progressive steps to automate confirming information improved the error count \cite{harris2014when}. Employees with mountains of data to enter may not do more than a quick visual confirmation, resulting in more errors. While data can be processed cheaply by hiring large numbers of low-cost employees, more can be done to provide efficient and accurate methods for data handling.
+During a controlled 2009 study at UNLV, 215 students were provided with 30 datasheets that contained six types of data to process. When the students only used visual confirmation of the correctness of the data, they made an average of 10.23 errors. Progressive steps to automate confirming information improved the error count \cite{harris2014when}. Employees with mountains of data to enter may not have time for more than a quick visual confirmation, resulting in more errors. While data can be processed cheaply by hiring large numbers of low-cost employees (for example, Amazon Mechanical Turk), more can be done to provide efficient and accurate methods for data handling.
 
 To demonstrate challenges and considerations in how to process a variety of inputs, we'll review the challenges and some data behind the manual entry of information (Section \ref{sectionManualDataEntry}). With the awareness of the problem at hand, we will define optical character recognition (OCR) and the challenges involved with this method (Section \ref{sectionOcr}). Built on the foundation of the business flow for manual data entry and the use of OCR, we will present a flow diagram for processing data (Section \ref{sectionProcessingData}). This section will break down these steps for processing, define document classification types, and review the steps needed to handle the data in a repeatable way.
 
-We'll focus on receiving orders and adding them to a company's ordering system. Ideal situations would see that customer orders be received in a consistent format. However, when there are a large number of customers, or if some customers carry a lot of weight, they will stick with the process that is easiest for them. This means that whatever comes out of the systems and applications that they use is what you will need to work from.
+We'll focus on receiving orders and adding them to a company's ordering system. Ideal situations would involve an integrated system, where customers enter an order in an application (like amazon.com) and the order is then directly passed into the company's Enterprise Resource Planning (ERP) system. This type of system is used to provide the company with insights and internal controls, provide a central database, is used by accounting, supply chain, sales, and many other departments within a business. Most situations are not ideal, and orders are received in other methods that must then be entered into the ERP manually. When there are a large number of customers, or when customers carry a lot of weight in how they place orders (using a method that is convenient for them and the systems they use), there may not be opportunities to attempt direct integration.
 
-Many solutions to parts of the problem are already available. We will then explore combining this flow for several document types into a single pipeline, review how PepsiCo successfully used this method (Section \ref{sectionSinglePipeline}), and explore how others may do likewise (Section \ref{sectionCosts}).
+Many solutions to parts of this problem are already available. We will then explore combining this flow for several document types into a single pipeline, review how several companies successfully used this method (Section \ref{sectionSinglePipeline}), and explore how we might do likewise (Section \ref{sectionSolutionsCost}).
 
 \section{Manual Data Entry} \label{sectionManualDataEntry}
 In 2018, Goldman Sachs reported that the direct and indirect cost of manual data entry for global businesses was estimated to be about \$2.7 trillion \cite{schneider2018b2b}. Gartner's study in 2019 found that avoidable rework in accounting departments amounted to 30\% of a full-time employees' time; for an accounting staff of 40 full-time employees, this amounts to 25,000 hours per year and about \$878,000 \cite{lavelle2019gartner}!
 
-While modern applications provide us with many conveniences, many companies or industries have legacy processes in place. People deal with paper forms and documents every day, which then must be typed into digital systems. Employees will receive emails, faxes, and files that they must then determine which type of document it is and then process it accordingly for that customer, usually by typing the data contained into another system. This manual data entry leaves room for error, as Gartner found. Additionally, manual entry is very time-consuming; talented employees could better spend their time on tasks that provide real value to building the customer relationship and improving the customer experience, rather than focusing on wearying data entry.
+While modern applications provide us with many conveniences, many companies or industries have legacy processes in place. People deal with paper forms and documents every day, which then must be typed into digital systems. Employees will receive emails, faxes, and files that they must then determine which type of document it is and then process it accordingly for that customer, usually by typing the data contained into another system.
+
+This manual data entry leaves room for error, as Gartner found. Additionally, manual entry is very time-consuming; talented employees could better spend their time on tasks that provide real value to building the customer relationship and improving the customer experience, rather than focusing on wearying data entry.
 
 \section{What is OCR?} \label{sectionOcr}
-Optical Character Recognition, more commonly known as OCR, is a technique that results in converting images and files into machine-readable data. The technology reviews images for fonts and shapes, matching information with text that can be reviewed and stored.
+Optical Character Recognition, more commonly known as OCR, is a technique that results in converting images and files into machine-readable data (information in a form that a computer can process). The OCR technology reviews images for fonts and shapes, matching information with text that can be reviewed and stored.
 
 While providing actionable information from different types of digital files, there are still many challenges with OCR. Images and pages may be received with incorrect orientation or skewed at an angle (imagine the paper is fed crookedly into a fax or scanner, or a picture taken with a phone that is not perfectly aligned). There may be noise or distortion on the page, or handwriting and other marks obscuring the printed text. If background colors or images are present, these can also impact the technology's ability to get a clear read on the information.
 
@@ -67,7 +69,7 @@ Introducing OCR to the process of receiving files from customers gives us a digi
 
 \section{Processing Data} \label{sectionProcessingData}
 
-Let's say we run a ball factory that produces balls of different colors and sizes. We receive orders from our customers in many ways. One of our larger customers has its inventory system, so when they order balls, they enter into their system and a templated spreadsheet is generated. This customer then emails us this file as an attachment. Another customer runs a small shop where the manager prints out an order request from their template in a word processing application that the owner captures a picture of from their phone and sends along.
+Let's say we run a ball factory that produces balls of different colors and sizes. We receive orders from our customers in many ways. One of our customers submits orders using a templated spreadsheet generated from their internal system. Another customer faxes their (different) templated order along, which is then received digitally as a scanned image. Yet another sends an email message containing the information for their order. With more customers, there can be a wide variety of ways that orders are submitted!
 
 \begin{figure}[ht]
 \centerline{\includegraphics[width=\columnwidth]{HighLevelFlow.png}}
@@ -75,20 +77,20 @@ Let's say we run a ball factory that produces balls of different colors and size
 \label{figHighLevelFlow}
 \end{figure}
 
-In the ideal setting, we'd force all of our customers to use a standardized process that is easy for us to ingest through simple rules. We could even create some macros in our spreadsheets to process the information and make it easy to enter into our ordering system. However, most companies do not have this ability for several reasons. Instead, they must consider how to handle the different types of documents by creating a business flow like the one in ``Fig.~\ref{figHighLevelFlow}''.
+Enforcing a specific business process will standardize the format and methods that customers use to place orders. We then can build an easy process to ingest orders using simple scripts and rules. We could even create macros in our spreadsheets to process the information and make it easy to enter into our ordering system. Not all companies will be able to expect a standard input on all customers; instead, they must consider how to handle the different types of documents by creating a business flow like the one in ``Fig.~\ref{figHighLevelFlow}''. The details in this general business flow are detailed below.
 
 \subsection{Ingest Data}
-The first step in our flow involves ingesting data. This just means that we are receiving it somehow. Oftentimes, this ingestion step may just be an employee receiving an email with an order attached or in the body of the message.
+The first step in our flow involves ingesting data. This means that we are receiving it somehow. The intake step may be an employee receiving a spreadsheet or in the body of the message.
 
-Some companies have different ingestion methods that allow for integrated flow to their ordering system, like having users place orders by logging into a website. This is even more ideal, as integrated systems allow for little-to-no human error once the order has been entered by the customer. New businesses may have this option, but those that have been around longer may have customers that are used to a certain method or have their legacy systems or large volumes of data that make manual entry into a web application difficult.
+Some companies have different ingestion methods that allow for integrated flow to their ordering system, like having users place orders by logging into a website and entering their orders directly. As our initially defined ideal scenario, integrated systems allow for little human error once the order has been entered by the customer. New businesses may have this option, but those that have been around longer may have customers that are used to a certain method or have their legacy ERP systems or large volumes of data that make manual entry into a web application difficult.
 
-To continue in our journey, we'll assume that we are ingesting documents that may come in a variety of types and formats and are not entered into an integrated system. We will assume that our orders for our ball factory are currently manually entered by a team of people.
+To continue in our journey through this business process, we'll assume that we are ingesting documents that come in various types and formats and are not part of an integrated system. We will assume that our customer orders for our ball factory are entered manually.
 
 \subsection{Understand \& Classify Data}
 Since we are receiving orders in several file types (spreadsheet, pdf, email message, etc) that could be handled in different ways, we must find a method for understanding and classifying the data into one of three primary categories: Structured Data, Semi-Structured Data, and Unstructured Data. Once we have organized our documents, we can take the appropriate next action.
 
 \subsubsection{Structured Data}
-Often in the format of comma-separated values (CSV) and spreadsheets, structured data is formatted in a consistent template. The page contains tables and predictable positions on the page or in the document. These documents could also be pdfs or other file types; the common thread is that the information is in the same layout for every document received.
+Often in the format of comma-separated values (CSV) and spreadsheets, structured data is formatted in a consistent template. The file contains tables with values in predictable positions. These documents could also be pdfs or other file types; the common thread is that the information is in the same layout for every document received.
 
 Because of its predictability, this type of data can be gathered through simple data extraction scripts or template-based OCR. Rule-based approaches work well because we always know where to expect information that can be linked to a key-value pair (in the form of ``key: value'' like ``date: 8/14/2021'' or ``PO: 1234567'' where ``date'' and ``PO'' are keys).
 
@@ -98,7 +100,15 @@ Because of its predictability, this type of data can be gathered through simple 
 \label{figSpreadsheet1}
 \end{figure}
 
-Using our ball factory example, the spreadsheet in ``Fig.~\ref{figSpreadsheet1}'' could be an example of a structured document, if all spreadsheets received follow the same layout. This structured data allows for scripts to be written that can map information by using the expected position of a value or with regular expressions to collect the value from the file. We've proven a sample of this in the simple Python code in Appendix \ref{appendixOrderOne}, with unit tests for the methods created (see Appendix \ref{appendixOrderOneTests}).
+Using our ball factory example, the spreadsheet in ``Fig.~\ref{figSpreadsheet1}'' could be an example of a structured document, if all spreadsheets received follow the same layout. This structured data allows for scripts to be written that can map information by using the expected position of a value or with regular expressions to collect the value from the file. We've proven a sample of this in the simple Python code in Appendix \ref{appendixOrderOne} (for related unit tests, see Appendix \ref{appendixOrderOneTests}).
+
+\begin{figure}[ht]
+\centerline{\includegraphics[width=\columnwidth]{RulesFlow1.png}}
+\caption{All documents that match ``Layout 1'' can be passed through the same set of rules, ``Rules 1,'' extracting the values for each key piece of data in the document and storing in a standardized format.}
+\label{figRulesFlow1}
+\end{figure}
+
+In ``Fig.~\ref{figRulesFlow1}'' we can imagine a straightforward set of rules that determines where information exists if all documents follow the same layout. When data is structured, we have a predictable place to look for the values we need, and gathering information in an automated method can be quite simple.
 
 \begin{figure}[ht]
 \centerline{
@@ -117,7 +127,7 @@ However, if the same layout template of the structured data isn't followed, the 
 
 \begin{figure}[ht]
 \centerline{\includegraphics[width=\columnwidth]{Spreadsheet2.png}}
-\caption{A templated spreadsheet for a purchase order containing the same information as ``Fig.~\ref{figSpreadsheet1}'', but with a different layout.}
+\caption{A templated spreadsheet for a purchase order containing similar information to ``Fig.~\ref{figSpreadsheet1}'', but with a different layout.}
 \label{figSpreadsheet2}
 \end{figure}
 
@@ -127,50 +137,64 @@ However, if the same layout template of the structured data isn't followed, the 
         \includegraphics[width=160pt]{ORDER_2_scanned.png}
     }
 }
-\caption{A templated scanned image for a purchase order containing the same information as ``Fig.~\ref{figScanned1}'', but with a different layout.}
+\caption{A templated scanned image for a purchase order containing similar information to ``Fig.~\ref{figScanned1}'', but with a different layout.}
 \label{figScanned2}
 \end{figure}
 
 Documents that contain the same type of information but in different designs and layouts fall into the category of semi-structured data. The keys in key-value pairs are the same across all documents, but the position on the page might vary, as seen in ``Fig.~\ref{figSpreadsheet2}''. Similarly, we might see scanned images like ``Fig.~\ref{figScanned2}'' with varied layouts.
 
-In this case, our rule-based approach gives us good accuracy for the document in ``Fig.~\ref{figSpreadsheet1}'', but low accuracy for the document in ``Fig.~\ref{figSpreadsheet2}'' (and similarly with the scanned images). If a business process is limited to only a few variations in the layout, writing a unique rule for each type is manageable. Appendix \ref{appendixOrderTwo} provides additional code that can be applied to the same methods used in Appendix \ref{appendixOrderOne} that will work for the spreadsheet in ``Fig.~\ref{figSpreadsheet2}''.
+\begin{figure}[ht]
+\centerline{\includegraphics[width=\columnwidth]{RulesFlow2a.png}}
+\caption{Documents with ``Layout 1'' applied to ``Rules 1'' will extract values with good accuracy, but documents with ``Layout 2'' applied to the same rules will extract values with low accuracy.}
+\label{figRulesFlow2a}
+\end{figure}
 
-However, this approach will have difficulty scaling for large volumes of semi-structured data. Companies will have to create a template creation and management process, adding and adjusting scripts and rules with each change and new layout.
+\begin{figure}[ht]
+\centerline{\includegraphics[width=\columnwidth]{RulesFlow2b.png}}
+\caption{Creating separate rules for each layout provides better accuracy.}
+\label{figRulesFlow2b}
+\end{figure}
 
-Introducing artificial intelligence (AI) at this stage for growing volumes of semi-structured data can make it easier to scale at this stage of document classification and data extraction, avoiding template management. 
+In this case, our rule-based approach gives us good accuracy for the document in ``Fig.~\ref{figSpreadsheet1}'', but low accuracy for the document in ``Fig.~\ref{figSpreadsheet2}'' (and similarly with the scanned images). With only a few variations in the layout as shown in ``Fig.~\ref{figRulesFlow2b}'', writing a unique rule for each type is manageable. Appendix \ref{appendixOrderTwo} provides additional code that can be applied to the same methods used in Appendix \ref{appendixOrderOne} that will work for the spreadsheet in ``Fig.~\ref{figSpreadsheet2}'', providing an example of creating rules for each layout.
 
-The field of AI combines computer science and hearty datasets to automate problem-solving \cite{ibm:ai}. Machine learning (ML), a specific form of AI, models can assist in automatically detecting information desired from the input documents. Vihar Kurama suggests the use of several pre-trained ML models (FastRCNN, Attention OCR, and Graph Convolution) for a hybrid solution of both rules-based data extraction and ML when working with semi-structured data such as our examples \cite{kurama2021a}.
+\begin{figure}[ht]
+\centerline{\includegraphics[width=\columnwidth]{RulesFlowN.png}}
+\caption{For a large number of layouts, rule and template management becomes a job in itself and does not scale well.}
+\label{figRulesFlow3}
+\end{figure}
 
-Important to note is that the reliance on automated extraction should always be kept in check by regular review of metrics, accuracy, and confidence scores. Thankfully the processing of more samples to a machine learning model results in higher accuracy of the data retrieved.
+This approach of creating rules for every layout variation will have difficulty scaling for large volumes of semi-structured data. Companies will have to create a template creation and management process, adding and adjusting scripts and rules with each change and new layout.
+
+Introducing artificial intelligence (AI) for growing volumes of semi-structured data can make it easier to scale at this stage of document classification and data extraction, avoiding template management. The field of AI combines computer science and hearty datasets to automate problem-solving \cite{ibm:ai}. Machine learning (ML), a specific form of AI, uses models to automatically detect the information desired from input documents. Vihar Kurama suggests the use of several pre-trained ML models (FastRCNN, Attention OCR, and Graph Convolution) for a hybrid solution of both rules-based data extraction and ML when working with semi-structured data such as our examples \cite{kurama2021a}.
+
+Important to note is that the reliance on automated extraction should always be kept in check by a regular human review of metrics, accuracy, and confidence scores. Thankfully the processing of more samples to a machine learning model results in higher accuracy of the data retrieved.
 
 \subsubsection{Unstructured Data}
-The final classification for documents received would be unstructured data. This type of document has no key-value pairs, may contain handwritten text, is free-flowing, and lacks consistency. Chances are that there are no tables (or the tables lack column headers) or a prescriptive way to automate the identification of which values to assign to which purposes.
+The final classification for documents received would be unstructured data. This type of document has no key-value pairs, may contain handwritten text, is free-flowing, and lacks consistency. Likely there are no tables (or the tables lack column headers) or a prescriptive way to automate the identification of which values to assign to which purposes.
 
 Scripts and ML are not enough to understand and classify this data. Instead, we may need to consider other techniques, such as natural language processing (NLP). Another branch of artificial intelligence, NLP provides computers with the ability to understand the text of a document in the same way that human beings can \cite{ibm:nlp}.
 
 \subsection{Digitize \& Standardize Data}
 With the process of understanding and classifying our data as structured, semi-structured, or unstructured, we now have some digital information that we can put to use. Our first pass at the documents might not have been deep enough to understand the document type; our business process may be more efficient at this point to gather just enough information to determine where to feed the document. This may mean that we're capturing the fact that there is a purchase order number, or an invoice number, or the title of an application form. 
 
-In our business flow, we assume our employee may be receiving more than one document type and needs to determine what the document is before they can decide the appropriate actions to take. This same is true for an automated form of this process. By standardizing the reduced data we've collected, we can continue to feed the documents through a pipeline, knowing we can make a decision based on the key-value pairs we've found so far.
-
 \subsection{Understand Document Types}
-With the standardized data from the previous step, we should now be able to determine if the document is an invoice, a purchase order, an application, etc. Documents that contain purchase order numbers would get routed to the process for the ordering system, those with invoice numbers might be sent to the Accounts Payable team, and applications should be routed to the appropriate department as well.
+With the standardized data from the previous step, we should can determine if the document is an invoice, a purchase order, an application form, and so on. Documents that contain purchase order numbers would get routed to the process for the ordering system, those with invoice numbers might be sent to the Accounts Payable team, and application forms should be routed to the appropriate department, etc.
 
 As a human, understanding the document types only takes a glance. If we consider automating this step for our pipeline, we need enough information to make the decision. If our data is structured, a rules-based system makes this very easy. Semi-structured and unstructured data can make this more difficult, especially if many document types are ingested into the same system. 
 
-Depending on the complexity of the business process involved, we may consider introducing machine learning in this step. Or, we improve our ingestion step to separate document types by directing users to submit different types of documents to the appropriate email address, shared folder, web portal, etc. The latter option may have some friction at the beginning but could be a very simple thing to overcome with a little customer training.
+Depending on the complexity of the business process involved, we may consider introducing machine learning in this step. Or, we improve our ingestion step to separate document types by directing users to submit different types of documents to the appropriate email address, shared folder, web portal, etc. The latter option may have some friction at the beginning but could be a very simple condition to overcome with a little customer training.
 
 \subsection{Better Data Extraction}
 Once we know our document type (invoice vs. purchase order, etc.) we can now apply more specific data extraction methods. This may be more heavily focused on machine learning models if the documents are semi-structured or unstructured.
 
 Because we'll assume that our data is semi-structured for our ball factory, this stage is a good placement for intelligent OCR. Model-based OCR engines can improve the process of digitizing the documents at scale while continuing to reduce errors with every training.
 
-While many intelligent OCR tools are available, one such tool is the ABBYY FlexiCapture. In a review done by PricewaterhouseCoopers (PwC), ABBYY FlexiCapture was rated best in class in data validation and data classification, as well as data extraction in both structured and semi-structured documents. It also ranked well for multi-lingual capabilities, and the ability to read barcodes and tables. Google Tesseract and Microsoft's Modi ranked better for screenscraping in desktop, web, and documents. PwC goes on to note that ``the integration of the ABBYY OCR engine not only enhances automation for rules-driven processes, but also adds the flavour of NLP and widens the scope of automation.'' \cite{pwc2018robotic}
-
-\subsection{Human Validation}
+\subsection{Human \& Automated Validation}
 Nearing the end of our process flow, we've now reached the point where our data has been ingested and completely digitized into a standardized format. While it's true that with machine learning we may need fewer human checks as we train with more samples, a certain level of human-in-the-loop is necessary (and a good idea) when automating document handling. Confirming accurate information has been gathered from the ingested documents is vital for clean data and correct orders being created.
 
 Thankfully, the continuous feed of more samples over time improves the ML model and builds confidence in the process. Regardless there should always be a human check to verify incoming information.
+
+Beyond the human check, we can also add automatic validation by cross-referencing the data we've gathered against information in our system. Do the item numbers and customers exist in our system? Are the items in the order out of stock? If using machine learning or OCR, we can also flag low-confidence scores for the human review.
 
 \section{Single Pipeline} \label{sectionSinglePipeline}
 All of this has helped us understand the problem and an approach to handling documents. We have an idea of which types of tools might be useful and each particular step, but now we must understand how to string it all together into a single, cohesive pipeline.
@@ -182,7 +206,7 @@ Robotic process automation, more commonly referred to as RPA, is the method of a
 
 While a powerful tool, the category of RPA is still relatively new in the technology field. In a survey of 100 document automation leaders by the Association of Intelligent Information Management, 18\% of the respondents use RPA and 12\% weren't sure of what RPA was. RPA with advanced capture has a place in the plans of 25\% of the respondents, but 42\% don't plan to make use of RPA. \cite{hollander2019survey}
 
-Beyond standard RPA, where we simply automate the flow itself, we can level up again by using intelligent RPA, which leverages forms of artificial intelligence.
+Beyond standard RPA, where we simply automate the flow itself, we can level up again by using intelligent RPA, which leverages forms of artificial intelligence, as we've already discussed, for document handling.
 
 \begin{figure}[ht]
 \centerline{\includegraphics[width=\columnwidth]{BotFlow.png}}
@@ -190,7 +214,7 @@ Beyond standard RPA, where we simply automate the flow itself, we can level up a
 \label{figBotFlow}
 \end{figure}
 
-The flow in ``Fig.~\ref{figBotFlow}'' is similar to the business process we began within ``Fig.~\ref{figHighLevelFlow}.'' However, we can see that with the use of RPA, we can assign many of previous stages to a virtual worker. With the rules and AI in place, our digital assistant can not only ingest the data, but also classify, organize by type, standardize the data, validate it by cross-checking against existing table mappings (and alerting a human employee if further inspection is needed), but then also enter the data into the appropriate system. Beyond that, the system can be a legacy system that has no convenient integrations; RPA can interact with the user interface just like a human employee would, but faster and without error.
+The flow in ``Fig.~\ref{figBotFlow}'' is similar to the business process we began within ``Fig.~\ref{figHighLevelFlow}.'' However, we can see that with the use of RPA, we can assign many of previous stages to a virtual worker; a human does not need to move the order document from one stage to the next. With the rules and AI in place, our digital assistant can not only ingest the data, but also classify, organize by type, standardize the data, validate it by cross-checking against existing table mappings (and alerting a human employee if further inspection is needed), but then also enter the data into the appropriate system (perhaps an ERP). Beyond that, legacy systems may have no convenient integrations; RPA can interact with the user interface just like a human employee would, faster and with accuracy.
 
 This intelligent enhancement to a previously cumbersome and very manual flow frees up the human employees to turn their focus back to what matters: the value of customer relationships and understanding their needs to grow sales.
 
@@ -215,10 +239,12 @@ PepsiCo's new flow is as follows:
 
 ``FlexiCapture's accuracy is also proving stable under a heavy workload. In its first three months the POWER Project solution has processed two thousand batches, over 21,000 documents and nearly 40,000 pages without issues – in a mix of five languages.'' \cite{pepsico}
 
-This single pipeline solution has proven that it can scale and scale well! Powerful tools like ABBYY FlexiCapture combined with the power of RPA enabled PepsiCo to not only improve the intake process for documents at one location but to create a solution that accurately processes the information and can be scaled across the entire enterprise.
+In a review done by PricewaterhouseCoopers (PwC), ABBYY FlexiCapture was rated best in class in data validation and data classification, as well as data extraction in both structured and semi-structured documents. It also ranked well for multi-lingual capabilities, and the ability to read barcodes and tables. Google Tesseract and Microsoft's Modi ranked better for screenscraping in desktop, web, and documents. PwC goes on to note that ``the integration of the ABBYY OCR engine not only enhances automation for rules-driven processes, but also adds the flavour of NLP and widens the scope of automation.'' \cite{pwc2018robotic}
+
+This single pipeline solution has proven that it can scale and scale well! Powerful tools that fit the specific process need, like ABBYY FlexiCapture, combined with the power of automation, enabled PepsiCo to not only improve the intake process for documents at one location but to create a solution that accurately processes the information and can be scaled across the entire enterprise.
 
 \subsection{Case Study: Sysco}
-With a similar desire to improve the business processes, and in some cases, a need for automation due to fewer employees as a result of the COVID-19 pandemic, Sysco set out to also improve the accuracy and efficiency of many tasks across the company. By creating an RPA team, Sysco sought not to improve a single process, but to create a new culture around automation that could be applied enterprise-wide.
+With a similar need and desire to improve the business processes, Sysco set out to also improve the accuracy and efficiency of many tasks across the company. By creating an RPA team, Sysco sought to create a new culture around automation that could be applied enterprise-wide.
 
 The Sysco RPA team has contributed to providing more than 200,000 hours of productivity given back to the business over its first 3.5 years of existence \cite{bpcafe2021sysco:slides}.
 
@@ -229,11 +255,34 @@ TK: MORE HERE!!
 \subsection{General Application}
 While the case studies presented above provide compelling narratives of the power of RPA in combination with OCR and AI, it may be difficult to understand where to begin. By identifying business cases that are repetitive and have a volume of effort that could be reduced through the use of scripts or automations, we have a place to start.
 
-With many powerful solutions out there, benefits can be found in small steps first. Are employees typing in data from paper forms regularly? Begin by ensuring that those documents are scanned into a system and then run an OCR engine against the document, providing your employees with something they can at least copy-paste. Or, perhaps you already have the information in structured spreadsheets. Write a script that automatically captures the key-value pairs and table data, storing the information in a standardized format like a database. Once the process flow is working smoothly to the point of consistent and standardized information, consider adding some type of automated solution that can enter the data directly into the system, rather than an employee copying the information in.
+\begin{figure}[ht]
+\centerline{\includegraphics[width=\columnwidth]{USE CASE - 1 - STRUCTURED.png}}
+\caption{Starting with an automated flow for only structured documents allows for full understanding of the process and gets employees familiar with using an RPA virtual assistant.}
+\label{figUseCase1}
+\end{figure}
+
+Businesses may experience a temptation to view automation as an all-or-nothing scenario. By starting with a small section of automation first, like ``Fig.~\ref{figUseCase1},'' we can provide benefits quite quickly. Automation small steps in a process provides opportunity to work out issues (not only bugs in the programming, but also finding flaws or forgotten exceptions in the business process itself). When chosen correctly, automating one step in a business process can deliver a return on investment as soon as the feature is being adopted by users. This smaller section also helps us to understand nuances and challenges before we move on to more complicated stages.
+
+\begin{figure}[ht]
+\centerline{\includegraphics[width=\columnwidth]{USE CASE - 4 - ALL.png}}
+\caption{By starting with one flow and adding in more entry points that lead to the same structured data, we can expand our automated process in an iterative way.}
+\label{figUseCase4}
+\end{figure}
+
+With each iteration of our process flow, we can provide new input formats that are handled by different rules and technologies (``Fig.~\ref{figUseCase4}''). We can add handling for structured data that is received through our web application, semi-structured data received as files on a shared drive, and unstructured data captured in an email message. We can continue to expand for all data classifications while still leveraging the automated stages we built in the first round once the data is stored in a standardized format.
+
+With many powerful solutions out there, advantages can be found in small steps first. Are employees typing in data from paper forms regularly? Begin by ensuring that those documents are scanned into a system and then run an OCR engine against the document, providing your employees with something they can at least copy-paste. Or, perhaps you already have the information in structured spreadsheets. Write a script that automatically captures the key-value pairs and table data, storing the information in a standardized format like a database. Once the process flow is working smoothly to the point of consistent and standardized information, consider adding some type of automated solution that can enter the data directly into the system, rather than an employee copying the information in.
 
 By taking small, iterative steps, any company, large or small, can work its way into an automated flow. While some solutions like ABBYY FlexiCapture can provide top-of-the-line solutions, the cost may be prohibitive to some companies. Start with the standard, rules-based methods, and enhance the areas that will still provide enough return-on-investment to justify the effort. The beautiful thing about the single-process pipeline idea is that more document types could be ingested over time, training the process with where to send each type. Digital worker steps might continue to be human employee steps, but there may be small improvements that can be made to allow the human to perform that step faster, like a dashboard that gives the employee a preview of the document, and they can quickly glance and classify the information manually. This may save on the implementation of intelligent OCR or ML while still providing time-saving benefits.
 
-\section{Costs} \label{sectionCosts}
+\section{Solutions \& Cost} \label{sectionSolutionsCost}
+There are many tools out there and it can quickly become overwhelming to narrow them down. If you're entering into the field of RPA, you may choose Blue Prism's Decipher or Automation Hero's solution. Perhaps you work with spreadsheets and gravitate towards Monarch. Microsoft has an entire suite of options with the Microsoft Power Apps. And we can't forget the solutions that Amazon provides.
+
+Each tool has its strengths and weaknesses, in addition to varying levels of cost. Understand the types of documents you'll be working with and determine your needs. If you've started with automating structured documents, and are ready to include other classifications that require intelligent sorting, consider which models and training might be necessary.
+
+The best tool will be whichever one you start using. One technology may not have extreme advantages over another. Some options may be tightly coupled to their own branded integrations. Others might have a nicer user interface. After you've done your initial research, don't let the number of options paralize you and prevent forward motion.
+
+TK: Improve above
 
 \section{Conclusion}
 Manual data entry is time-consuming and error-prone. The introduction of OCR (combined with ML) or NLP can result in fewer typos and opens the door to the improved process flow. Beyond that, considering RPA within the business process can create further efficiencies, giving skilled employees time back to focus on more valuable tasks that have a higher impact on the company's profitability.
@@ -242,9 +291,9 @@ Many well-tested solutions are available, with pre-trained models available to i
 
 While still a young category of technology, RPA provides further enhancements by not only stringing together the steps into a single process flow but also moving into working with legacy systems without the need to wait for modern integrations like APIs.
 
-Depending on the business needs, more research can (and should) be done on which tools may provide the best solutions. If the budget allows, ABBYY FlexiCapture was rated very highly. A quick search on the web can provide appropriate overviews of the best tools. For example, Nanonets provides a list of pros and cons for the best OCR tools of 2021 \cite{prithiv2021best}. Depending on the needs and time available (for development and potential training of models) for each business case, the right tool for the job may change.
+Depending on the business needs, more research can (and should) be done on which tools may provide the best solutions. A quick search on the web can provide appropriate overviews of the most beneficial tools. For example, Nanonets provides a list of pros and cons for the best OCR tools of 2021 \cite{prithiv2021best}. Depending on the needs and time available (for development and potential training of models) for each business case, the right tool for the job may change.
 
-TK: DOUBLE THE LENGTH OF THE CONCLUSION (1 page total)
+Iterating through development is key for quick return on investment and limiting rework. Starting with rule-based solutions can provide a solution that is faster to deliver and provides insights into nuances and challenges within the process flow. Expanding into RPA in the next iteration builds confidence and trust in the automation, freeing up more time for human employees to focus on valuable tasks. Entering into intelligent RPA opens the floodgates to the types of documents that can be handled automatically, with human review.
 
 \bibliographystyle{unsrt}
 \bibliography{bibliography}
