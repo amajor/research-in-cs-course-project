@@ -1,14 +1,26 @@
 # Course Project
 
+The following gives and overview of a report structure. You can adjust to fit your needs.
+
+- Abstract (0.5 page)
+- Introduction (1 page)
+- The Problem (1 page )
+- Related work (2 pages)
+- Your Idea or solution (1 page)
+- The Details ( 5 to 8  pages)
+- Conclusion and further work (1 page)
+
 ## Grading Rubric
 
 | LEVEL | DESCRIPTION |
 | ----- | ----------- |
-| Poor  | not relevant to the topic |
-| Marginal | not insightful |
-| Acceptable | general with details |
-| Good | summary with some details |
-| Honors | Summary presented as an abstract with details such as concepts, relevance, applications, etc. |
+| (1) Poor  | not relevant to the topic |
+| (2) Marginal | not insightful |
+| (3) Acceptable | general with details |
+| (4) Good | summary with some details |
+| (5) Honors | Summary presented as an abstract with details such as concepts, relevance, applications, etc. |
+
+### Paper
 
 | | Poor  | Marginal | Acceptable | Good | Honors |
 | --- | --- | --- | --- | --- | --- |
@@ -20,3 +32,13 @@
 | Organization of the manuscript | | | | |
 | Clarity in writing, tables, graphs and illustrations | | | | |
 | Presentation | | | | |
+
+### Presentation
+
+| | 1 | 2 | 3 | 4 | 5 |
+| --- | --- | --- | --- | --- | --- |
+| To what extent does the student’s presentation communicate both the merits of the research project and the research process that the student went through to complete the project? | | | | |
+| To what extent can the student communicate effectively about the project? Can the student provide cogent responses to questions? Can the student defend the research proposal suggestions made?  | | | | |
+| To what extent the student has displayed an extensive literature review when conducting the project? | | | | |
+
+**Total: ??/15**
