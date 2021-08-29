@@ -1,4 +1,17 @@
-# Course Project
+# Contents
+
+* Research Paper: [Improving Accuracy & Efficiency in Document Handling for Business Processes](./courseproject.pdf)
+* [Sample Code](./Scripts) _(demonstrates extracting values from structured table data stored in spreadsheets)_
+* [Sample Documents](./Samples) _(fake order documents stored as scanned pdf documents, spreadsheets, and email messages)_
+* [Presentation](./Presentation) _(slides created for a 15-minutes presentation of the research content)_
+* [Research](./Research) _(downloaded copies of documents used as references)_
+* [Guidelines](./Guidelines) _(references for LaTeX styling of IEEE documents)_
+
+---
+
+# Assignment
+
+## Course Project
 
 The following gives and overview of a report structure. You can adjust to fit your needs.
 
@@ -10,7 +23,7 @@ The following gives and overview of a report structure. You can adjust to fit yo
 - The Details ( 5 to 8  pages)
 - Conclusion and further work (1 page)
 
-## Grading Rubric
+### Grading Rubric
 
 | LEVEL | DESCRIPTION |
 | ----- | ----------- |
@@ -20,7 +33,7 @@ The following gives and overview of a report structure. You can adjust to fit yo
 | (4) Good | summary with some details |
 | (5) Honors | Summary presented as an abstract with details such as concepts, relevance, applications, etc. |
 
-### Paper
+#### Paper
 
 | | Poor  | Marginal | Acceptable | Good | Honors |
 | --- | --- | --- | --- | --- | --- |
@@ -33,7 +46,7 @@ The following gives and overview of a report structure. You can adjust to fit yo
 | Clarity in writing, tables, graphs and illustrations | | | | |
 | Presentation | | | | |
 
-### Presentation
+#### Presentation
 
 | | 1 | 2 | 3 | 4 | 5 |
 | --- | --- | --- | --- | --- | --- |
