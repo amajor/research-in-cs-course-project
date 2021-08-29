@@ -2,9 +2,7 @@ import datetime
 import unittest
 import pandas as pd
 from parameterized import parameterized
-from spreadsheets.methods import get_column_value, get_row_value, get_po_number, get_total_cost, get_total_quantity, \
-    get_ship_date, get_ship_to_name, get_bill_to_name, get_cell_value, get_item_line_number, get_item_quantity, \
-    get_item_unit_of_measure, get_item_number, get_item_description, get_item_unit_price, get_item_cost
+from spreadsheets.methods import *
 
 FILE_PATH = '../documents/ORDERS.xlsx'
 SHEET_NAME = 'Order Sample 1'
